@@ -1,0 +1,18 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Include:
+    - app/**/*.rb
+    - spec/**/*.rb
+    - db/**/*.rb
+  Exclude:
+    - db/schema.rb
+  TargetRubyVersion: 3.2.2
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
